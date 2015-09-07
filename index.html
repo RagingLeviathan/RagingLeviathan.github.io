@@ -7,8 +7,12 @@ body {
 background: #5a6785 url("http://i.imgur.com/332qgOB.png");
 }
 
+#container{
+width:80%;
+}
+
 #contents {
-width: 65%;
+width: 90%;
 height: 590px;
 background: #101010;
 border-style:  solid;
@@ -17,7 +21,7 @@ border-width: 3px 0px 0px 10px;
 border-radius: 20px 0px 26px 0px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 13%;
+margin-top: 2%;
 color: whitesmoke;
 font-family: "Arial Narrow";
 font-size: 23px;
@@ -31,19 +35,19 @@ height: 540px;
 
 #levilogo {
 float: right;
-margin-right: 0.75%;
-margin-top: -6.5%;
+
 }
 
 #rltitle {
 color: red;
 font-family: "Copperplate Gothic Light", sans-serif;
-font-size: 75px;
-float: left;
+font-size: 40px;
 margin-right: 0;
-margin-top: -6%;
 margin-left: 20%;
 letter-spacing: 1.5px;
+position: relative;
+display: block;
+width: 400px;
 }
 
 #footer {
@@ -81,20 +85,22 @@ z-index: 0;
 <link rel="shortcut icon" type="image/x-icon" href="http://i.imgur.com/8H1OyYa.png">
 </head>
 <body>
-	<img src="levi.png" id="levilogo"/>
-	<h1 id="rltitle">Raging Leviathan</h1>
-	<div id="contents">
-	<div id="banner">
-	<p>under construction!</p>
-	</div>
-		<div id="words">
-		    Hiya! Thanks for stopping by. My name is Nicole and hopefully something great will appear here....soon.
-			
-			
+	<div id="container">
+		<img src="levi.png" id="levilogo"/>
+		<h1 id="rltitle">Raging Leviathan</h1>
+		<div id="contents">
+		<div id="banner">
+		<p>under construction!</p>
 		</div>
-		<div id="footer">
-			 <p>Copyright Nicole Graham, 3rd year undergraduate software developer and part-time web developer. All rights reserved.</p>
+			<div id="words">
+				Hiya! Thanks for stopping by. My name is Nicole and hopefully something great will appear here....soon.
+				
+				
 			</div>
+			<div id="footer">
+				 <p>Copyright Nicole Graham, 3rd year undergraduate software developer and part-time web developer. All rights reserved.</p>
+				</div>
+		</div>
 	</div>
 </body>
 </html>
