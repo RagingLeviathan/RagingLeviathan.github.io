@@ -60,9 +60,7 @@ text-align: center;
 text-transform: uppercase;
 }
 
-div {
-display: block;
-}
+
 
 #banner {
 height: auto;
@@ -76,22 +74,62 @@ position: fixed;
 padding: -2px;
 z-index: 0;
 }
+
+#menu, #menu ul {
+height: auto;
+padding: 2px 0px;
+margin: 0px;
+list-style: none;
+}
+
+#menu {
+width: 200px;
+text-align: justify;
+text-justify: inter-word;
+zoom:1;
+}
+
+#menu:before, #menu:after {
+content: "";
+display: table;
+}
+
+#menu:after {
+clear:both;
+}
+
+#menu li {
+float: left;
+position: relative;
+}
 </style>
 
 <link rel="shortcut icon" type="image/x-icon" href="http://i.imgur.com/8H1OyYa.png">
 </head>
 <body>
-	<img src="levi.png" id="levilogo"/>
+	<img src="http://i.imgur.com/lVSqUuv.png" id="levilogo"/>
 	<h1 id="rltitle">Raging Leviathan</h1>
 	<div id="contents">
-	<div id="banner">
-	<p>under construction!</p>
-	</div>
 		<div id="words">
-		    Hiya! Thanks for stopping by. My name is Nicole and hopefully something great will appear here....soon.
+		    <p>This is where I will list sites that I have made some kind of contribution to.</p>
+			
+			 <ul id="menu">
+			<li><a href="http://ghos.boards.net/">Project Ghos</a><br><p>
+			A collaboration with <a href="http://bryce-d.github.io/">Bryce D</a>. 
+			We both co-develop for the site, which will feature a Showdown simulator 
+			with metagames developed in-house to addition to a Pokédex that I am in the middle of developing.</p></li>
+			<li><a href="http://k00187723.atspace.cc/game/index.php">Project Xzars</a><br><p>
+			Revamp Xzars, a PVP, multi-faceted web application that I conceived in February 2015. 
+			Inspired by Pokémon Showdown, I've been attempting to build it from the ground up.</p></li>
+			<li><a href="http://www.tpe-rpg.net/">Project TPE</a><br>
+			
+			A online Pokémon RPG reminiscent of Pokémon Crater in many respects. I will be an assistant developer for the site and the forums.</li>
+			</ul>
+			
 			
 			
 		</div>
+		
 		<div id="footer">
 			 <p>Copyright Nicole Graham, 3rd year undergraduate software developer and part-time web developer. All rights reserved.</p>
 			</div>
