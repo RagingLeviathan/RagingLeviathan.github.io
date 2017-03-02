@@ -1,4 +1,107 @@
 <html>
 <h2>hello this is a test page for the forum</h2>
+<!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments “Do not remove this code”  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' style='width:600px;margin:auto;'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.eu/crm/WebToContactForm'  name=WebToContacts9210000000074188 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
 
+	 <!-- Do not remove this code. -->
+	<input type='text' style='display:none;' name='xnQsjsdp' value='1149a5b8633fa9280ae72dc67e0c481702e128c2ab3a0e3c6901355ce0545824'/>
+	<input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+	<input type='text' style='display:none;' name='xmIwtLD' value='b78ea4f4056d7696296b8b649e10351b5999d20f0f4c691adc6515c66fe3d33f'/>
+	<input type='text' style='display:none;'  name='actionType' value='Q29udGFjdHM='/>
+
+	<input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;ragingleviathan.github.io&#x2f;tpafive.html' /> 
+	 <!-- Do not remove this code. -->
+	<style>
+		tr , td { 
+			padding:6px;
+			border-spacing:0px;
+			border-width:0px;
+			}
+	</style>
+	<table style='width:600px;background-color:white;color:black'>
+
+	<tr><td colspan='2' style='text-align:left;color:black;font-family:Arial;font-size:14px;'><strong>Contact Enquiry</strong></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>First Name</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='40' name='First Name' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Last Name<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='80' name='Last Name' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Email<span style='color:red;'>*</span></td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='100' name='Email' /></td></tr>
+
+	<tr><td  style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:200px;'>Mobile</td><td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='30' name='Mobile' /></td></tr>
+
+	<tr style='display:none;' ><td style='nowrap:nowrap;text-align:left;font-size:12px;font-family:Arial;width:50%'>Lead Source</td><td style='width:250px;'>
+		<select style='width:250px;' name='Lead Source'>
+			<option value='-None-'>-None-</option>
+			<option value='Advertisement'>Advertisement</option>
+			<option value='Cold&#x20;Call'>Cold Call</option>
+			<option value='Employee&#x20;Referral'>Employee Referral</option>
+			<option value='External&#x20;Referral'>External Referral</option>
+			<option value='Partner'>Partner</option>
+			<option value='Public&#x20;Relations'>Public Relations</option>
+			<option value='Trade&#x20;Show'>Trade Show</option>
+		<option selected value='Web&#x20;Form'>Web Form</option>
+			<option value='Search&#x20;Engine'>Search Engine</option>
+			<option value='Facebook'>Facebook</option>
+			<option value='Twitter'>Twitter</option>
+		</select></td></tr>
+
+	<tr><td colspan='2' style='text-align:center; padding-top:15px;'>
+		<input style='font-size:12px;color:#131307' type='submit' value='Submit' />
+		<input type='reset' style='font-size:12px;color:#131307' value='Reset' />
+	    </td>
+	</tr>
+   </table>
+	<script>
+ 	  var mndFileds=new Array('Last Name','Email');
+ 	  var fldLangVal=new Array('Last Name','Email');
+		var name='';
+		var email='';
+
+ 	  function checkMandatory() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToContacts9210000000074188'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{ 
+				 alert('Please select a file to upload.'); 
+				 fieldObj.focus(); 
+				 return false;
+				} 
+			alert(fldLangVal[i] +' cannot be empty'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+	     }
+	   
+</script>
+	</form>
+</div>
+  
 </html>
